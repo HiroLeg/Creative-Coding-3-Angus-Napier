@@ -1,0 +1,904 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: b1026180dc7c2da46ae84254ddc371da, type: 2}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 705507994}
+  m_IndirectSpecularColor: {r: 0.7739152, g: 0.9384443, b: 0.9756374, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &229846399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229846401}
+  - component: {fileID: 229846400}
+  m_Layer: 0
+  m_Name: IdeaGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229846400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229846399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 856eccd1e4a9f694f8566d2f48e67491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adverbs:
+  - 'Always '
+  - 'Potentially '
+  - 'Sometimes '
+  - 'Promptly '
+  - 'Crossly '
+  - 'Physically '
+  - 'Politely '
+  - 'Slowly '
+  - 'Wisely '
+  - 'Easily '
+  - 'Rapidly '
+  - 'Quirkily '
+  - 'Miserably '
+  - 'Zealously '
+  - 'Lovingly '
+  - 'Usually '
+  - 'Vaguely '
+  - 'Verbally '
+  - 'Wildly '
+  - 'Wrongly '
+  verbs:
+  - 'remembers '
+  - 'believes '
+  - 'forgives '
+  - 'influence '
+  - 'expresses '
+  - 'understands '
+  - 'complains '
+  - 'thinks '
+  - 'touches '
+  - 'shows '
+  - 'returns '
+  - 'reveals '
+  - 'pays '
+  - 'performs '
+  - 'offers '
+  - 'gives '
+  - 'drinks '
+  - 'disappears '
+  - 'develops '
+  - 'has '
+  noun:
+  - 'Fungi '
+  - 'Paris '
+  - 'Cats '
+  - 'AK47 '
+  - 'Swords '
+  - 'Shield '
+  - 'Hero '
+  - 'Protection '
+  - 'Ferrari '
+  - 'Porche '
+  - 'Conflict '
+  - 'One Taps '
+  - 'Eggs '
+  - 'Crisis '
+  - 'Skins '
+  - 'Depth '
+  - 'Fun '
+  - 'Chocolate '
+  - 'Ghosts '
+  - 'Goblins '
+  - 'Ohio '
+  genre:
+  - 'FPS '
+  - 'Rogue-lite '
+  - 'Souls-like '
+  - 'Adventure '
+  - 'Action '
+  - 'Stealth '
+  - 'Simulator '
+  - 'Strategy '
+  - 'Walking Sim '
+  - 'Survival '
+  - 'Building '
+  - 'Visual Novel '
+  - 'Phone '
+  - 'Sports '
+  - 'Competitive '
+  - 'RPG '
+  - 'Puzzle '
+  - 'Educational '
+  - 'Battle Royale '
+  IdeaText: {fileID: 487768593}
+--- !u!4 &229846401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229846399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 44.465477, y: -13.6129875, z: 28.018036}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &487768590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487768591}
+  - component: {fileID: 487768594}
+  - component: {fileID: 487768593}
+  - component: {fileID: 487768592}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &487768591
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487768590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1198429697}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1.75, y: -13.75}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &487768592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487768590}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8358db1a92648c446ab5c169ba993c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiProverbs:
+  - 1. Game Designers Should Be Good at Writing
+  - 2. Developers Are Not Artists
+  - 3. Everyone Can Make Games
+  - 4. People Don't Want New Stuff
+  - 5. Anyone Can Do Anything
+  - 6. Game Design Is Just An Idea
+  - 7. Everything Has Its Time
+  - 1. "It's not whether you win or lose; it's how you play the game."
+  - 2. "The best designers aren't good at everything."
+  - '3. "You only need two things to make anything great: A blank canvas and a lot
+    of paint."'
+  - '4. "There are two types of people in this world: Those who follow rules, and
+    those who break them."'
+  - 5. "When you're young, you think you know everything; When you're old, you find
+    out you were wrong."
+  - 6. "Any fool can write code that a computer can understand. Good programmers
+    write code that humans can understand."
+  - 7. "If you are not prepared to fail, then you will never succeed."
+  - '8. "Don''t be afraid to fail. Success is born from failures." '
+  - 9. "Most importantly, don't ever stop playing!"
+  - 10. "The whole point of this sentence is to show that I am insane."
+  - 11. "I'm tired of waiting for somebody else to make the changes I want to see.
+    So I'm going to go ahead and fix this myself
+  - 12. "Designing for yourself is the hardest thing you'll ever do."
+  - 13. "Always keep in mind that while you're trying to accomplish something, you're
+    simultaneously attempting to avoid doing something else."
+  - "1. The first rule of games is, \u201CYOU DON\u2019T KNOW ABOUT THE GAME!\u201D"
+  - The second rule of games is, "You don't know how to play."
+  - The third rule of games is, 'Don't use rules.'
+  - The fourth rule of games is, Don't tell me what I want to do.
+  - The fifth rule of games is, You're not supposed to win.
+  - The sixth rule of games is, Games aren't fun if you lose.
+  - The seventh rule of games is, If you think you're smart enough to figure out
+    how to beat the game, then it's probably cheating.
+  - The seventh rule of games is, If you think you're smart enough to figure out
+    how to beat the game, then it's probably cheating.
+  - The eighth rule of games is, There are no stupid questions.
+  - The ninth rule of games is, Have fun.
+  - The tenth rule of games is, No matter what happens, the winner is always right.
+  - The eleventh rule of games is, Play the game until someone wins.
+  - The twelfth rule of games is, When playing a game, treat it like real life; except
+    when it isn't.
+  - The thirteenth rule of games is, A good game is hard to find.
+  - 'The fourteenth rule of games is: If it sounds too good to be true, it probably
+    is.'
+  - '# 1. Your game is not fun until its finished.'
+  - '# 2. A player who loves what they''re doing is much more likely to enjoy playing
+    your game than someone who hates the idea of it.'
+  - '# 3. You should only add features to your game based on feedback, not based
+    on how exciting you think those features sound.'
+  - '# 4. Players who pay attention to detail will always beat players who ignore
+    it.'
+  - '# 5. People who are passionate about something tend to put the same amount of
+    passion into their hobbies as they do into their jobs.'
+  - '# 6. Every game mechanic has two sides. One side will make you hate it; the
+    other will make you love it.'
+  - '# 7. Most of the time, players will prefer the easiest way to win.'
+  - 1. If something is worth doing, it's worth overdoing.
+  - 2. There comes a time when the only thing worse than being wrong, is not having
+    tried.
+  - 3. Don't tell me how smart you are; show me what you've done.
+  - 4. You have two ears and one mouth - use them separately!
+  - 5. A good idea is worth 10 hours of work.
+  - 6. If I'm going to do it right, I'll do it once...
+  - 7. Always make sure you're working on something worthwhile before starting.
+  - 8. What if everyone else was wrong?
+  - 9. No matter who you are, someone somewhere will criticize you.
+  - 11. Just because you're paranoid doesn't mean they aren't after you.
+  - 12. Only the paranoid survive.
+  - 13. Everyone thinks their idea has been thought of before.
+  - 14. Never underestimate the power of stupidity.
+  - 1. Everything changes.  Everything changes. Unless you're dead.
+  - 2. You need to know what happened before you make decisions based on what could
+    have been.
+  - 3. Don't put off until tomorrow what you can do today.
+  - 4. If you don't know where you want to go, how will you know when you've gotten
+    there?
+  - 5. Always do the best job you can.
+  - 6. What if it doesn't work out?
+  - 7. Never let someone else decide what you should do.  Never let anyone else tell
+    you what to do. That's their problem.
+  - 1. A good idea is only half finished until someone else does something with it.
+  - 2. The best way to make a bad game even worse is to release it early.
+  - 3. Never let a customer win.
+  - 4. Don't show me what I want. Show me how to get what I want.
+  - 5. If you have a problem, ask yourself if you would pay money for a solution.
+    Then go find a real programmer.
+  - 6. Everything should be done at least twice.
+  - 7. All bugs will eventually be fixed, except those who never get any customers.
+  - 8. Designing a game shouldn't feel like work. It should feel like play.
+  - 9. When you're stuck, look around and figure out where you could add some fun.
+  - 10. There's no point in making games unless they sell well enough to cover their
+    costs.
+  - 11. You don't need to know everything to do great things. Just pick a subject
+    you care about and then learn everything you can about it. That's the quickest
+    way to master it.
+  - 12. If you aren't sure what to do, just try doing nothing.
+  - 13. Good designers are always looking for ways to improve their own designs.
+  - 14. Your first prototype doesn't matter. How many people enjoy playing your game
+    isn't really the point either.
+  - 1. Make sure they don't cheat! (Not everyone cheats)
+  - 2. Don't make them too smart, they'll find a way around it (Don't give them time
+    to think)
+  - 3. Give them what they want, then take away their choices (Only let them choose
+    what's good for them)
+  - 4. Let them fail, if it means we learn something (Let them lose, so they win)
+  - 5. Keep them hooked, even if they're not playing (Keep them addicted)
+  - 6. Try to keep them happy, but let them know how much you care (Make them feel
+    special)
+  - 7. If they ask where it came from, tell them it was magic (If they ask why, tell
+    them it doesn't matter)
+  - 8. Let them try different things, but keep track of who likes what (Give them
+    freedom, but keep tabs)
+  - 9. Have fun while doing it (It's not supposed to be serious)
+  - 10. Be fair, but don't be nice (They'll hate you anyway)
+  - 11. Don't get attached, just do your job (Don't fall in love)
+  - 12. Put the player first, but remember the audience (Put them first, but keep
+    the fans in mind)
+  - 13. Never forget where it started (Never forget where it came from)
+  - 14. Show some respect, but always be yourself (Show some respect, but never imitate)
+  - 1. "The best way to get a job at a company is to work hard."
+  - 2. "If you're working on a project, do not discuss what you are doing. Discussing
+    your current project will only distract your team members' attention away from
+    their own tasks.
+  - 3. "When designing a game, try to think outside the box."
+  - 4. "Never put a gun in a holster designed for a sword."
+  - 5. "It doesn't matter who wins; the battle still goes on.
+  - '6. "There are two types of people: those who finish what they start, and those
+    who start what they finish."'
+  - 7. "He who fights hardest wins."
+  - 8. "You can't fix stupid."
+  - 9. "Don't let perfect be the enemy of good."
+  - 10. "All war is based on deception."
+  _aiProverbs: 
+  proverbText: {fileID: 487768593}
+--- !u!114 &487768593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487768590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Click to get a  AI Game Design Proverb
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 874d40accbfa2744b937b05e7792772a, type: 2}
+  m_sharedMaterial: {fileID: 673310925744804049, guid: 874d40accbfa2744b937b05e7792772a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -405.21228, y: -204.7789, z: -319.0556, w: -127.64087}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &487768594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487768590}
+  m_CullTransparentMesh: 1
+--- !u!1 &705507993
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 705507995}
+  - component: {fileID: 705507994}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &705507994
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &705507995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &963194225
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 963194228}
+  - component: {fileID: 963194227}
+  - component: {fileID: 963194226}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &963194226
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+--- !u!20 &963194227
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &963194228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1198429693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1198429697}
+  - component: {fileID: 1198429696}
+  - component: {fileID: 1198429695}
+  - component: {fileID: 1198429694}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1198429694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198429693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1198429695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198429693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1198429696
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198429693}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1198429697
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198429693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 487768591}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &1305344902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+  m_PrefabInstance: {fileID: 1949313345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1305344906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305344902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439d244eeb0088e409ea7ba650fde214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: {x: 0, y: 10, z: 30}
+--- !u!1001 &1949313345
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 82.50918
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 232.32445
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 351.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
+      propertyPath: m_Name
+      value: GameAWeek11Blender
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c062cd5426c7cb5468dfe7dfd594a029, type: 3}
