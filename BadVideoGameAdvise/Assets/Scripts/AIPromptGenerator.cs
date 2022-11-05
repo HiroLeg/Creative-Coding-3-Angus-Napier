@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 /*Unfortuantely couldn't get this script to work :( I was getting a 401 error
-if you have any insight as to why feel free to share, otherwise completely unsure how to use Open Ai in unity
-also dont steal my Api Key ;)*/
+if you have any insight as to why feel free to share, otherwise completely unsure how to use Open Ai in unity.*/
 public class AIPromptGenerator : MonoBehaviour
 {
     [Header("Ai Prompt")]
@@ -15,7 +14,7 @@ public class AIPromptGenerator : MonoBehaviour
     public string temp;
     public string frequencyPenalty;
     public string presencePenalty;
-    public string ApiKey = "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";
+    public string ApiKey = "Removed My API key";
 
     [Header("Controls and Display")]
     public float cooldown;
